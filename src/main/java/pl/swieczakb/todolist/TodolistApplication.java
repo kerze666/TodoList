@@ -2,13 +2,13 @@ package pl.swieczakb.todolist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 
 @SpringBootApplication
-@EnableMongoRepositories(basePackages = "pl.swieczakb.todolist.repository")
+@EnableNeo4jRepositories
 public class TodolistApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TodolistApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TodolistApplication.class, args);
+    }
 }

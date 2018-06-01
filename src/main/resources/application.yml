@@ -1,16 +1,5 @@
-#spring:
-#  application:
-#    name: ToDo-List
-#  data:
-#    mongodb:
-#      host:
-#      uri:
-#      username:
-#      password:
-#      database:
-#    rest:
-#      base-path: /api
-#
-#
-#
-#
+spring:
+  data:
+    neo4j:
+      password: admin
+      username: neo4j

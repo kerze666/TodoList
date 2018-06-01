@@ -2,14 +2,16 @@ package pl.swieczakb.todolist.model;
 
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import org.neo4j.ogm.annotation.GeneratedValue;
+import org.neo4j.ogm.annotation.Id;
+import org.neo4j.ogm.annotation.NodeEntity;
 
 @Data
-@Document
+@NodeEntity
 public class ToDoCard {
 
     @Id
+    @GeneratedValue
     public Long id;
 
     public String title;

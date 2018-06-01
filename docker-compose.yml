@@ -1,0 +1,10 @@
+version: '3.6'
+  neo4j:
+    image: neo4j
+    container_name: todo-list-neo4j
+    publish:
+      - 7474:7474
+    publish:
+      - 7687:7687
+    volumes:
+      - C:/neo4j/data:/data
